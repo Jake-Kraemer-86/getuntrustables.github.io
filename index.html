@@ -5,102 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UNTRUSTABLES™ — Coming Soon</title>
   <meta name="description" content="Untrustables™ — luxury, nostalgic, infused snacks. Trust us… you shouldn’t." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0a0a0a; --card:#121212; --muted:#1b1b1b;
-      --gold:#c9a227; --gold-2:#a88920; --text:#f6f6f6; --sub:#b9b9b9;
-      --straw:#d63447; --honey:#e0aa2b; --grape:#6b4cd6; --hazel:#9c6b3d;
+    :root {
+      --bg: #0a0a0a;
+      --text: #f6f6f6;
+      --gold: #c9a227;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;background:radial-gradient(1200px 800px at 80% 10%,rgba(201,162,39,.12),transparent 55%),
-                     radial-gradient(1000px 700px at 10% 100%,rgba(156,107,61,.12),transparent 55%), var(--bg);
-      color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
     }
-    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px 18px}
-    .card{width:min(1040px,92vw);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));
-          border:1px solid var(--muted);border-radius:20px;padding:44px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
-    header{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-    .logoMark{display:grid;place-items:center;width:52px;height:52px;border:2px solid var(--gold);border-radius:10px;position:relative}
-    .logoMark:before{content:"";position:absolute;width:36px;height:2px;background:var(--gold);transform:rotate(45deg)}
-    .brand{font-weight:800;letter-spacing:.08em;font-size:28px;color:var(--gold)}
-    .tag{margin:2px 0 0;color:var(--sub)}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:28px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    .copy h1{font-size:44px;line-height:1.1;margin:10px 0 12px}
-    .copy p{color:#ddd;margin:0 0 18px}
-    .ctaRow{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{appearance:none;cursor:pointer;border:none;border-radius:999px;padding:12px 18px;font-weight:700;text-decoration:none}
-    .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#121212}
-    .btn.ghost{background:transparent;border:1px solid var(--muted);color:#fff}
-    .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;color:var(--sub);font-size:14px}
-    .panel{background:rgba(255,255,255,.03);border:1px solid var(--muted);border-radius:16px;padding:18px}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
-    .chip{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:#0f0f0f;border:1px solid var(--muted)}
-    .swatch{width:14px;height:14px;border-radius:3px}
-    .swatch.grape{background:var(--grape)}
-    .swatch.honey{background:var(--honey)}
-    .swatch.straw{background:var(--straw)}
-    .swatch.hazel{background:var(--hazel)}
-    footer{margin-top:30px;color:var(--sub);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .notice{border-left:3px solid var(--muted);padding-left:12px}
-    .legal{opacity:.8}
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .tagline {
+      font-weight: 600;
+      color: #888;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <header>
-        <div class="logoMark" aria-hidden="true"></div>
-        <div>
-          <div class="brand">UNTRUSTABLES™</div>
-          <div class="tag">“Trust us… you shouldn’t.”</div>
-        </div>
-      </header>
-
-      <section class="hero">
-        <div class="copy">
-          <h1>Dangerously nostalgic,<br>built for grown-ups.</h1>
-          <p>Luxury, sealed triangle sandwich bites. A national brand platform rolling out state by state. Sign up to get the first drop and licensing news.</p>
-          <div class="ctaRow">
-            <a class="btn gold" href="mailto:info@getuntrustables.com?subject=Untrustables%20—%20Keep%20me%20posted&body=Hey%20—%20add%20me%20to%20the%20list.">Notify me</a>
-            <a class="btn ghost" href="mailto:licensing@getuntrustables.com">Licensing</a>
-          </div>
-          <div class="meta">
-            <span>21+ • Not for kids</span>
-            <span class="notice">Contact: licensing@getuntrustables.com</span>
-          </div>
-        </div>
-        <div class="panel">
-          <strong>Flavor Lineup</strong>
-          <div class="grid">
-            <div>
-              <div class="chip"><span class="swatch grape"></span> OG PB&J</div>
-              <a href="/og-pbj-package.jpeg"
-                 target="_blank"
-                 style="display:block;font-size:0.9em;color:#cda756;margin-top:6px;text-decoration:none;">
-                 View package
-              </a>
-            </div>
-
-            <div class="chip"><span class="swatch honey"></span> Honey Banana Buzz</div>
-            <div class="chip"><span class="swatch straw"></span> Midnight Strawberry</div>
-            <div class="chip"><span class="swatch hazel"></span> HAZE-L Nut</div>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="legal">© <span id="y"></span> Untrustables™. All rights reserved.</div>
-        <div class="legal">Not affiliated with or endorsed by The J.M. Smucker Company.</div>
-      </footer>
-    </div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <h1>UNTRUSTABLES™</h1>
+  <p>Coming Soon</p>
+  <p class="tagline">Luxury, nostalgic, infused snacks. Trust us… you shouldn’t.</p>
 </body>
 </html>
